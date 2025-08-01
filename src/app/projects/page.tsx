@@ -1,3 +1,20 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Explore the impactful projects by Global Shapers Delhi. Discover our initiatives in climate action, education, mental health, and youth leadership that are creating positive change in Delhi.",
+  keywords: ["Global Shapers Delhi Projects", "Climate Action", "Education", "Mental Health", "Youth Leadership", "Social Impact", "Delhi Initiatives"],
+  openGraph: {
+    title: "Projects - Global Shapers Delhi",
+    description: "Explore the impactful projects by Global Shapers Delhi. Discover our initiatives in climate action, education, mental health, and youth leadership that are creating positive change in Delhi.",
+    url: "/projects",
+  },
+  twitter: {
+    title: "Projects - Global Shapers Delhi",
+    description: "Explore the impactful projects by Global Shapers Delhi. Discover our initiatives in climate action, education, mental health, and youth leadership that are creating positive change in Delhi.",
+  },
+};
+
 export default function Projects() {
   return (
     <section className="max-w-5xl mx-auto flex flex-col gap-8">

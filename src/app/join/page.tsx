@@ -1,3 +1,20 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Join Us",
+  description: "Join Global Shapers Delhi and become part of a community of young leaders making positive change. Apply now to be part of our initiatives in climate action, mental health, and youth leadership.",
+  keywords: ["Join Global Shapers Delhi", "Apply Now", "Youth Leadership", "Volunteer", "Delhi Hub", "Young Leaders", "Social Impact"],
+  openGraph: {
+    title: "Join Us - Global Shapers Delhi",
+    description: "Join Global Shapers Delhi and become part of a community of young leaders making positive change. Apply now to be part of our initiatives in climate action, mental health, and youth leadership.",
+    url: "/join",
+  },
+  twitter: {
+    title: "Join Us - Global Shapers Delhi",
+    description: "Join Global Shapers Delhi and become part of a community of young leaders making positive change. Apply now to be part of our initiatives in climate action, mental health, and youth leadership.",
+  },
+};
+
 export default function Join() {
   return (
     <section className="max-w-3xl mx-auto flex flex-col gap-8">

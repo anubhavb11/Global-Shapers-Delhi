@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://globalshapersdelhi.org'),
+  metadataBase: new URL('https://global-shapers-delhi.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://globalshapersdelhi.org',
+    url: 'https://global-shapers-delhi.vercel.app',
     siteName: 'Global Shapers Delhi',
     title: 'Global Shapers Delhi - Empowering Young Leaders for Change',
     description: 'Global Shapers Delhi is part of the World Economic Forum\'s initiative, empowering young leaders to drive positive change in Delhi through climate action, mental health, and youth leadership projects.',

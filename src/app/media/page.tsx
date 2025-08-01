@@ -1,3 +1,20 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Media & Updates",
+  description: "Stay updated with the latest news, events, and media coverage from Global Shapers Delhi. Follow our journey of creating positive change through youth leadership and social impact initiatives.",
+  keywords: ["Global Shapers Delhi Media", "News", "Events", "Updates", "Social Media", "Delhi Hub", "Youth Leadership News"],
+  openGraph: {
+    title: "Media & Updates - Global Shapers Delhi",
+    description: "Stay updated with the latest news, events, and media coverage from Global Shapers Delhi. Follow our journey of creating positive change through youth leadership and social impact initiatives.",
+    url: "/media",
+  },
+  twitter: {
+    title: "Media & Updates - Global Shapers Delhi",
+    description: "Stay updated with the latest news, events, and media coverage from Global Shapers Delhi. Follow our journey of creating positive change through youth leadership and social impact initiatives.",
+  },
+};
+
 export default function Media() {
   return (
     <section className="max-w-5xl mx-auto flex flex-col gap-8">

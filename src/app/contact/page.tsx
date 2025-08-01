@@ -1,3 +1,20 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "Get in touch with Global Shapers Delhi. Connect with us for collaborations, questions, or to join our community of young leaders making positive change in Delhi.",
+  keywords: ["Contact Global Shapers Delhi", "Get in Touch", "Join Us", "Collaboration", "Delhi Hub", "Youth Leadership"],
+  openGraph: {
+    title: "Contact Us - Global Shapers Delhi",
+    description: "Get in touch with Global Shapers Delhi. Connect with us for collaborations, questions, or to join our community of young leaders making positive change in Delhi.",
+    url: "/contact",
+  },
+  twitter: {
+    title: "Contact Us - Global Shapers Delhi",
+    description: "Get in touch with Global Shapers Delhi. Connect with us for collaborations, questions, or to join our community of young leaders making positive change in Delhi.",
+  },
+};
+
 export default function Contact() {
   return (
     <section className="max-w-2xl mx-auto flex flex-col gap-8">

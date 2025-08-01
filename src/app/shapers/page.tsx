@@ -1,3 +1,20 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Shapers",
+  description: "Meet the passionate young leaders of Global Shapers Delhi. Discover our current members and alumni who are driving positive change through climate action, mental health, and youth leadership initiatives.",
+  keywords: ["Global Shapers Delhi Members", "Young Leaders", "Delhi Hub", "Current Members", "Alumni", "Youth Leadership", "Social Impact"],
+  openGraph: {
+    title: "Our Shapers - Global Shapers Delhi",
+    description: "Meet the passionate young leaders of Global Shapers Delhi. Discover our current members and alumni who are driving positive change through climate action, mental health, and youth leadership initiatives.",
+    url: "/shapers",
+  },
+  twitter: {
+    title: "Our Shapers - Global Shapers Delhi",
+    description: "Meet the passionate young leaders of Global Shapers Delhi. Discover our current members and alumni who are driving positive change through climate action, mental health, and youth leadership initiatives.",
+  },
+};
+
 export default function Shapers() {
   return (
     <section className="max-w-5xl mx-auto flex flex-col gap-8">
