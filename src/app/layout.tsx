@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
     default: "Global Shapers Delhi - Empowering Young Leaders for Change",
     template: "%s | Global Shapers Delhi"
   },
-  description: "Global Shapers Delhi is part of the World Economic Forum's initiative, empowering young leaders to drive positive change in Delhi through climate action, mental health, and youth leadership projects.",
+  description: "Global Shapers Delhi is part of the World Economic Forum&apos;s initiative, empowering young leaders to drive positive change in Delhi through climate action, mental health, and youth leadership projects.",
   keywords: ["Global Shapers", "Delhi", "World Economic Forum", "Youth Leadership", "Climate Action", "Mental Health", "Social Impact", "Young Leaders", "Delhi Hub"],
   authors: [{ name: "Global Shapers Delhi" }],
   creator: "Global Shapers Delhi",
@@ -29,7 +28,7 @@ export const metadata: Metadata = {
     url: 'https://global-shapers-delhi.vercel.app',
     siteName: 'Global Shapers Delhi',
     title: 'Global Shapers Delhi - Empowering Young Leaders for Change',
-    description: 'Global Shapers Delhi is part of the World Economic Forum\'s initiative, empowering young leaders to drive positive change in Delhi through climate action, mental health, and youth leadership projects.',
+    description: 'Global Shapers Delhi is part of the World Economic Forum&apos;s initiative, empowering young leaders to drive positive change in Delhi through climate action, mental health, and youth leadership projects.',
     images: [
       {
         url: '/og-image.jpg',
@@ -42,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Global Shapers Delhi - Empowering Young Leaders for Change',
-    description: 'Global Shapers Delhi is part of the World Economic Forum\'s initiative, empowering young leaders to drive positive change in Delhi through climate action, mental health, and youth leadership projects.',
+    description: 'Global Shapers Delhi is part of the World Economic Forum&apos;s initiative, empowering young leaders to drive positive change in Delhi through climate action, mental health, and youth leadership projects.',
     images: ['/og-image.jpg'],
     creator: '@globalshapersdelhi',
   },

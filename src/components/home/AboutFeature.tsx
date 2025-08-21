@@ -34,7 +34,7 @@ export default function AboutFeature() {
               
               {/* Main body text */}
               <p className="text-sm sm:text-base lg:text-lg text-white leading-relaxed mb-8 text-left">
-                The Global Shapers Delhi Hub is a dynamic community of young leaders dedicated to creating meaningful impact across New Delhi. As part of the World Economic Forum's Global Shapers Community, we unite passionate individuals from diverse backgrounds to address pressing urban challenges—from sustainability and public health to technology and inclusion. Through innovative projects, collaborative workshops, and strategic partnerships, our members drive positive change while nurturing personal and professional growth. We are committed to diversity, inclusion, and empowering the next generation of changemakers to transform both our city and the world.
+                The Global Shapers Delhi Hub is a dynamic community of young leaders dedicated to creating meaningful impact across New Delhi. As part of the World Economic Forum&apos;s Global Shapers Community, we unite passionate individuals from diverse backgrounds to address pressing urban challenges—from sustainability and public health to technology and inclusion. Through innovative projects, collaborative workshops, and strategic partnerships, our members drive positive change while nurturing personal and professional growth. We are committed to diversity, inclusion, and empowering the next generation of changemakers to transform both our city and the world.
               </p>
               
               {/* Button */}
