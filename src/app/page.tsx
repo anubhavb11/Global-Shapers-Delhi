@@ -3,7 +3,7 @@ import HeroSection from "../components/home/HeroSection";
 import AboutFeature from "../components/home/AboutFeature";
 import MissionVisionSection from "../components/home/MissionVisionSection";
 import ImpactSection from "../components/home/ImpactSection";
-import TeamSection from "../components/home/TeamSection";
+import CuratorshipSection from "../components/home/CuratorshipSection";
 import ProjectsSection from "../components/home/ProjectsSection";
 import TestimonialSection from "../components/home/TestimonialSection";
 import JoinUsSection from "../components/home/JoinUsSection";
@@ -32,7 +32,7 @@ export default function Home() {
       <AboutFeature />
       <MissionVisionSection />
       <ImpactSection />
-      <TeamSection />
+      <CuratorshipSection />
       <ProjectsSection />
       <TestimonialSection />
       <JoinUsSection />
