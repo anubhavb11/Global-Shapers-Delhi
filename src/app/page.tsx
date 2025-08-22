@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import HeroSection from "../components/home/HeroSection";
 import AboutFeature from "../components/home/AboutFeature";
-import ImpactStats from "../components/home/ImpactStats";
+import MissionVisionSection from "../components/home/MissionVisionSection";
+import ImpactSection from "../components/home/ImpactSection";
 import TeamSection from "../components/home/TeamSection";
 import ProjectsSection from "../components/home/ProjectsSection";
 import TestimonialSection from "../components/home/TestimonialSection";
@@ -29,7 +30,8 @@ export default function Home() {
     <div >
       <HeroSection />
       <AboutFeature />
-      <ImpactStats />
+      <MissionVisionSection />
+      <ImpactSection />
       <TeamSection />
       <ProjectsSection />
       <TestimonialSection />
