@@ -25,17 +25,16 @@ export default function Navbar() {
         <li><Link href="/about">About</Link></li>
         <li><Link href="/shapers">Our Shapers</Link></li>
         <li><Link href="/projects">Projects</Link></li>
-        <li><Link href="/join">Join Us</Link></li>
         <li><Link href="/media">Media</Link></li>
       </ul>
 
-      {/* Contact Button and Mobile Menu */}
+      {/* Join Us Button and Mobile Menu */}
       <div className="flex items-center gap-4">
         <Link 
-          href="/contact" 
+          href="/join" 
           className="hidden md:block bg-[#0D5392] text-white px-4 py-2 rounded-md font-medium hover:bg-[#0D5392]/90 transition-colors"
         >
-          Contact Us
+          Join Us
         </Link>
         <button 
           className="md:hidden text-black p-2"
@@ -59,15 +58,14 @@ export default function Navbar() {
             <li><Link href="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
             <li><Link href="/shapers" onClick={() => setIsMenuOpen(false)}>Our Shapers</Link></li>
             <li><Link href="/projects" onClick={() => setIsMenuOpen(false)}>Projects</Link></li>
-            <li><Link href="/join" onClick={() => setIsMenuOpen(false)}>Join Us</Link></li>
             <li><Link href="/media" onClick={() => setIsMenuOpen(false)}>Media</Link></li>
             <li>
               <Link 
-                href="/contact" 
+                href="/join" 
                 onClick={() => setIsMenuOpen(false)}
                 className="bg-[#0D5392] text-white px-4 py-2 rounded-md font-medium hover:bg-[#0D5392]/90 transition-colors inline-block"
               >
-                Contact Us
+                Join Us
               </Link>
             </li>
           </ul>
