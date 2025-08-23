@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 
 interface Testimonial {
@@ -133,7 +134,7 @@ export default function TestimonialSection() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  }, [handleUserInteraction, prevTestimonial, nextTestimonial]);
 
   return (
     <section className="w-full py-12 sm:py-16 px-4 sm:px-6 ">
@@ -169,28 +170,24 @@ export default function TestimonialSection() {
                   <div className="max-w-3xl mx-auto text-center">
                     {/* Quote */}
                     <div className="mb-8">
-                      <div className="text-4xl sm:text-5xl text-blue-600 mb-4">"</div>
+                      <div className="text-4xl sm:text-5xl text-blue-600 mb-4">&ldquo;</div>
                       <blockquote className="text-lg sm:text-xl text-gray-700 leading-relaxed italic">
                         {testimonial.quote}
                       </blockquote>
-                      <div className="text-4xl sm:text-5xl text-blue-600 mt-4">"</div>
+                      <div className="text-4xl sm:text-5xl text-blue-600 mt-4">&rdquo;</div>
                     </div>
 
                     {/* Profile */}
                     <div className="flex flex-col items-center gap-4">
                       <div className="relative">
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-4 border-blue-100 shadow-lg">
-                          <img
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-4 border-blue-100 shadow-lg relative">
+                          <Image
                             src={testimonial.image}
                             alt={testimonial.name}
-                            className="w-full h-full object-cover"
-                            onError={(e) => {
-                              const target = e.target as HTMLImageElement;
-                              target.style.display = 'none';
-                              target.nextElementSibling!.style.display = 'flex';
-                            }}
+                            fill
+                            className="object-cover"
                           />
-                          <div className="w-full h-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white font-bold text-lg sm:text-xl" style={{ display: 'none' }}>
+                          <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white font-bold text-lg sm:text-xl">
                             {testimonial.name.split(' ').map(n => n[0]).join('')}
                           </div>
                         </div>
@@ -237,9 +234,9 @@ export default function TestimonialSection() {
 
           {/* Pagination Dots */}
           <div className="flex justify-center mt-8 gap-2">
-            {testimonials.map((_, index) => (
+            {testimonials.map((testimonial, index) => (
               <button
-                key={index}
+                key={testimonial.id}
                 onClick={() => goToTestimonial(index)}
                 disabled={isTransitioning}
                 className={`w-3 h-3 rounded-full transition-all duration-200 ${
