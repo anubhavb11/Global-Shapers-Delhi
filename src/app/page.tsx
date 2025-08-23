@@ -6,7 +6,6 @@ import ImpactSection from "../components/home/ImpactSection";
 import CuratorshipSection from "../components/home/CuratorshipSection";
 import ProjectsSection from "../components/home/ProjectsSection";
 import TestimonialSection from "../components/home/TestimonialSection";
-import JoinUsSection from "../components/home/JoinUsSection";
 import StayConnectedSection from "../components/home/StayConnectedSection";
 
 export const metadata: Metadata = {
@@ -34,7 +33,6 @@ export default function Home() {
       <CuratorshipSection />
       <ProjectsSection />
       <TestimonialSection />
-      <JoinUsSection />
       <StayConnectedSection />
     </div>
   );

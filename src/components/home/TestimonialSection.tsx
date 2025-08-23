@@ -136,7 +136,7 @@ export default function TestimonialSection() {
   }, []);
 
   return (
-    <section className="w-full py-12 sm:py-16 px-4 sm:px-6 bg-gray-50">
+    <section className="w-full py-12 sm:py-16 px-4 sm:px-6 ">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
