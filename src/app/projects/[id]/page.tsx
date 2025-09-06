@@ -1,17 +1,33 @@
 "use client";
+import { useState, useEffect } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { getProjectById } from "../../../data/projects";
+import { getProjectById, Project } from "../../../data/projects";
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = getProjectById(params.id);
+  const [project, setProject] = useState<Project | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadProject = async () => {
+      const { id } = await params;
+      const projectData = getProjectById(id);
+      setProject(projectData || null);
+      setLoading(false);
+    };
+    loadProject();
+  }, [params]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   if (!project) {
     notFound();
@@ -110,7 +126,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
 
             {/* What We're Doing Now */}
             <div className="bg-white rounded-lg shadow-sm p-8">
-              <h2 className="text-2xl font-bold text-[#0D5392] mb-4">What We're Doing Now</h2>
+              <h2 className="text-2xl font-bold text-[#0D5392] mb-4">What We&apos;re Doing Now</h2>
               <p className="text-gray-600 leading-relaxed">{project.currentWork}</p>
             </div>
 

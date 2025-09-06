@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 
@@ -78,6 +78,26 @@ export default function TestimonialSection() {
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
   const [isPaused, setIsPaused] = useState(false);
 
+  const nextTestimonial = useCallback(() => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    setTimeout(() => setIsTransitioning(false), 300);
+  }, [isTransitioning]);
+
+  const prevTestimonial = useCallback(() => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setTimeout(() => setIsTransitioning(false), 300);
+  }, [isTransitioning]);
+
+  const handleUserInteraction = useCallback(() => {
+    setIsPaused(true);
+    // Resume auto-advance after 10 seconds of inactivity
+    setTimeout(() => setIsPaused(false), 10000);
+  }, []);
+
   // Auto-advance carousel
   useEffect(() => {
     if (isPaused) return;
@@ -89,27 +109,7 @@ export default function TestimonialSection() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [currentIndex, isTransitioning, isPaused]);
-
-  const nextTestimonial = () => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-    setTimeout(() => setIsTransitioning(false), 300);
-  };
-
-  const prevTestimonial = () => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-    setTimeout(() => setIsTransitioning(false), 300);
-  };
-
-  const handleUserInteraction = () => {
-    setIsPaused(true);
-    // Resume auto-advance after 10 seconds of inactivity
-    setTimeout(() => setIsPaused(false), 10000);
-  };
+  }, [currentIndex, isTransitioning, isPaused, nextTestimonial]);
 
   const goToTestimonial = (index: number) => {
     if (isTransitioning || index === currentIndex) return;
@@ -190,7 +190,7 @@ export default function TestimonialSection() {
               className="flex transition-transform duration-300 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-              {testimonials.map((testimonial, index) => (
+              {testimonials.map((testimonial) => (
                 <div 
                   key={testimonial.id}
                   className="w-full flex-shrink-0 px-8 py-12 sm:px-12 sm:py-16"

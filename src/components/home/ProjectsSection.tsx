@@ -11,7 +11,7 @@ export default function ProjectsSection() {
       <div className="w-full max-w-6xl">
         <h2 className="text-2xl sm:text-3xl font-bold text-[#0D5392] mb-4 text-center">Our Projects</h2>
         <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
-          Discover the impactful initiatives we're leading to create positive change in Delhi and beyond.
+          Discover the impactful initiatives we&apos;re leading to create positive change in Delhi and beyond.
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8">

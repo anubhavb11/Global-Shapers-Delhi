@@ -28,10 +28,10 @@ export default function Home() {
     <div >
       <HeroSection />
       <AboutFeature />
-      <MissionVisionSection />
+      <ProjectsSection />
       <ImpactSection />
       <CuratorshipSection />
-      <ProjectsSection />
+      <MissionVisionSection />
       <TestimonialSection />
       <StayConnectedSection />
     </div>

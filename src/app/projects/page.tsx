@@ -1,5 +1,4 @@
 "use client";
-import type { Metadata } from "next";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,7 +19,7 @@ export default function Projects() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-[#0D5392] mb-4">Our Projects</h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Explore the impactful initiatives we're leading to create positive change in Delhi and beyond. 
+            Explore the impactful initiatives we&apos;re leading to create positive change in Delhi and beyond. 
             Each project addresses critical challenges and creates lasting impact in our communities.
           </p>
         </div>
