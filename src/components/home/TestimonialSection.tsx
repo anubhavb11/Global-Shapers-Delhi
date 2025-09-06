@@ -13,33 +13,61 @@ interface Testimonial {
 }
 
 const testimonials: Testimonial[] = [
-  {
-    id: 1,
-    quote: "Being a part of the Global Shapers Community has transformed my perspective on leadership and collaboration. Together, we are making a tangible impact in our communities and beyond.",
-    name: "Aditi Sharma",
-    role: "Youth Advocate, NGO",
-    image: "/images/testimonials/aditi.jpg"
-  },
-  {
-    id: 2,
-    quote: "The Global Shapers Delhi hub has given me the platform to connect with like-minded individuals who are passionate about creating positive change. It's incredible to see what we can achieve together.",
-    name: "Rahul Verma",
-    role: "Social Entrepreneur",
-    image: "/images/testimonials/rahul.jpg"
-  },
+    {
+      id: 1,
+      quote: "Global Shapers Delhi has been instrumental in shaping my understanding of social impact. The collaborative environment and diverse perspectives have enriched my journey as a changemaker.",
+      name: "Aakarshi Srivastava",
+      role: "Manager, Adam Smith International",
+      image: "/images/testimonials/Aakarshi_Srivastava.jpg"
+    },
+    {
+      id: 2,
+      quote: "The network and opportunities provided by Global Shapers Delhi have opened doors I never imagined. It's a community that truly believes in the power of young leaders.",
+      name: "Akanksha Mehta",
+      role: "Student, University of Delhi ",
+      image: "/images/testimonials/Akanksha_Mehta.jpg"
+    },
   {
     id: 3,
-    quote: "Through various projects and initiatives, I've learned the true meaning of collaborative leadership. The impact we create ripples far beyond our immediate community.",
-    name: "Priya Patel",
-    role: "Community Organizer",
-    image: "/images/testimonials/priya.jpg"
+    quote: "Being part of this community has taught me that real change happens when passionate individuals come together with a shared vision for a better tomorrow.",
+    name: "Ayush Thakur",
+    role: "Consultant, Ministry of Youth Affairs & Sports ",
+    image: "/images/testimonials/Ayush_Thakur.jpeg"
   },
   {
     id: 4,
-    quote: "The mentorship and support I've received from fellow shapers has been invaluable. This community truly embodies the spirit of youth-led change and innovation.",
-    name: "Arjun Singh",
-    role: "Tech for Good Advocate",
-    image: "/images/testimonials/arjun.jpg"
+    quote: "The Global Shapers Delhi hub has provided me with invaluable experiences in community building and social innovation. Every project is a learning opportunity.",
+    name: "Mahima Bhagat",
+    role: "Consultant, Technology Strategy and Transformation - Deloitte India",
+    image: "/images/testimonials/Mahima_Bhagat.jpeg"
+  },
+  {
+    id: 5,
+    quote: "This community has shown me that age is just a number when it comes to creating meaningful impact. The support and mentorship here are unparalleled.",
+    name: "Mannan Morvi",
+    role: "Researcher - Crashfree India",
+    image: "/images/testimonials/Mannan_Morvi.jpg"
+  },
+  {
+    id: 6,
+    quote: "Global Shapers Delhi has been my platform for growth, learning, and making a difference. The collaborative spirit here is truly inspiring.",
+    name: "Rishabh Rohilla",
+    role: "Founder, Rish R. Overseas & Shamta Foundation",
+    image: "/images/testimonials/Rishabh_Rohilla.jpeg"
+  },
+  {
+    id: 7,
+    quote: "The diversity of thought and the commitment to positive change in this community is remarkable. It's been an honor to be part of such impactful initiatives.",
+    name: "Sanskriti Choubey",
+    role: "CGM - Fellow",
+    image: "/images/testimonials/Sanskriti_Choubey.jpg"
+  },
+  {
+    id: 8,
+    quote: "Through Global Shapers Delhi, I've discovered the power of collective action and the importance of youth voices in shaping our future.",
+    name: "Twisha Bansal",
+    role: "Fellow (Health Awareness Project)",
+    image: "/images/testimonials/Twisha_Bansal.jpeg"
   }
 ];
 
@@ -186,8 +214,17 @@ export default function TestimonialSection() {
                             alt={testimonial.name}
                             fill
                             className="object-cover"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                              const fallback = target.nextElementSibling as HTMLElement;
+                              if (fallback) fallback.style.display = 'flex';
+                            }}
                           />
-                          <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white font-bold text-lg sm:text-xl">
+                          <div 
+                            className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white font-bold text-lg sm:text-xl"
+                            style={{ display: 'none' }}
+                          >
                             {testimonial.name.split(' ').map(n => n[0]).join('')}
                           </div>
                         </div>

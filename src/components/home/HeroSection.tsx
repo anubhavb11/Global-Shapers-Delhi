@@ -12,14 +12,14 @@ export default function HeroSection() {
         
         {/* "DELHI HUB" Text positioned above image with minimal overlay */}
         <div className="relative w-full max-w-4xl mb-4">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#0D5392] leading-tight uppercase tracking-wide text-center mb-2">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#0D5392] leading-tight uppercase tracking-wide text-center mb-9">
             DELHI HUB
           </h1>
           
           {/* Main Group Photo Container */}
           <div className="relative w-full aspect-[4/3] max-h-[150px] sm:max-h-[300px] rounded-lg overflow-hidden -mt-4">
             <Image
-              src="/images/optimise-global_shapers_grp.png"
+              src="/images/home_global_shapers_grp.jpeg"
               alt="Global Shapers Delhi Hub Team"
               fill
               className="object-cover"
