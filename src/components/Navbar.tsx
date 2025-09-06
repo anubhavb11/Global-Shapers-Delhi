@@ -114,7 +114,7 @@ export default function Navbar() {
                 <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#0D5392] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link 
                 href="/shapers" 
                 onClick={() => setIsMenuOpen(false)}
@@ -123,7 +123,7 @@ export default function Navbar() {
                 Our Shapers
                 <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#0D5392] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link 
                 href="/projects" 

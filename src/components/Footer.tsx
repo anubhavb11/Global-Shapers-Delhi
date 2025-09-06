@@ -14,7 +14,7 @@ export default function Footer() {
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
         <Link href="/projects">Projects</Link>
-        <Link href="/shapers">Our Shapers</Link>
+        {/* <Link href="/shapers">Our Shapers</Link> */}
         <Link href="/join">Join Us</Link>
         <Link href="/media">Media</Link>
         <Link href="/contact">Contact</Link>
