@@ -68,6 +68,20 @@ const testimonials: Testimonial[] = [
     name: "Twisha Bansal",
     role: "Fellow (Health Awareness Project)",
     image: "/images/testimonials/Twisha_Bansal.jpeg"
+  },
+  {
+    id: 9,
+    quote: "Being part of the Global Shapers Delhi Hub has been one of the most rewarding journeys of my life. I started as a fellow in 2020, full of curiosity and passion to make a difference, and over time, grew into the roles of Shaper, Impact Officer, and Curator. Each step taught me something new — about leadership, collaboration, and the power of community. The experience culminated in the incredible opportunity to be a Davos50 Delegate in 2024, which allowed me to understand global perspectives and the potential of young changemakers. What I cherish most is how this platform constantly challenged me to grow, pushed me to think bigger, gave me a perfect springboard and connected me with inspiring people committed to creating lasting impact. It’s a space full of opportunities, learning, and purpose.",
+    name: "Pranidhi Sawhney",
+    role: "Consultant, The World Bank",
+    image: "/images/testimonials/Pranidhi_Sawhney.jpg"
+  },
+  {
+    id: 10,
+    quote: "Being part of the Global Shapers New Delhi Hub has been one of the most rewarding experiences for me. What makes the hub special is not just the ambitious projects we run — on mental health, health, education, climate, and financial literacy — but the energy and commitment of the people behind them. I’ve seen first-hand how the team goes beyond talk and actually builds initiatives that create real impact. Whether it’s challenging stigma around mental health, helping young people make informed financial choices, or opening up opportunities in education and health, the work always feels grounded in what communities really need. For me, the best part has been the culture of collaboration and empathy. Everyone brings different strengths, but we share the same purpose of making change happen. It’s taught me how powerful youth-led action can be when we work together with focus and heart.",
+    name: "Arshiya Verma",
+    role: "Senior Associate, Dimagi",
+    image: "/images/testimonials/Arshiya_Verma.jpg"
   }
 ];
 
@@ -200,7 +214,7 @@ export default function TestimonialSection() {
                     <div className="mb-8">
                       <div className="text-4xl sm:text-5xl text-blue-600 mb-4">&ldquo;</div>
                       <blockquote className="text-lg sm:text-xl text-gray-700 leading-relaxed italic">
-                        {testimonial.quote}
+                        {testimonial.quote.slice(0, 300)}...
                       </blockquote>
                       <div className="text-4xl sm:text-5xl text-blue-600 mt-4">&rdquo;</div>
                     </div>
