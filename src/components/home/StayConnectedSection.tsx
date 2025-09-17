@@ -1,4 +1,4 @@
-import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
@@ -25,6 +25,17 @@ export default function StayConnectedSection() {
           <p className="text-xs text-gray-500">
             Click to access our Linktree with all our social media links and resources
           </p>
+          {/* Email Contacts */}
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-left">
+            <div className="flex items-center gap-2 text-[#0D5392] font-semibold mb-2">
+              <FaEnvelope />
+              <span>Email</span>
+            </div>
+            <div className="flex flex-col text-sm sm:text-base">
+              <a href="mailto:newdelhishapers@gmail.com" className="text-[#0D5392] hover:text-[#08305c] break-all">newdelhishapers@gmail.com</a>
+              <a href="mailto:gscnewdelhicurators@gmail.com" className="text-[#0D5392] hover:text-[#08305c] break-all">gscnewdelhicurators@gmail.com</a>
+            </div>
+          </div>
           <div className="flex gap-4 text-[#0D5392] text-xl sm:text-2xl justify-center lg:justify-start">
             <a 
               href="https://www.linkedin.com/company/global-shapers-new-delhi-hub/?originalSubdomain=in" 

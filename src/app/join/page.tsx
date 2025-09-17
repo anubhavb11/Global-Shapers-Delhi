@@ -47,20 +47,16 @@ export default function Join() {
             We welcome passionate young leaders committed to making a difference in our city and the world.
           </p>
           
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <Link 
-              href="#" 
+            <a 
+              href="https://linktr.ee/globalshapersdelhihub" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="bg-[#0D5392] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#08305c] transition duration-300 text-center shadow-lg hover:shadow-xl"
             >
               Apply Now
-            </Link>
-            <Link 
-              href="/contact" 
-              className="bg-white border-2 border-[#0D5392] text-[#0D5392] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#0D5392]/10 transition duration-300 text-center shadow-lg hover:shadow-xl"
-            >
-              Contact Us
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -93,11 +89,11 @@ export default function Join() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="bg-gray-50 rounded-lg p-6">
-                <div className="text-2xl font-bold text-[#0D5392] mb-2">18-30</div>
+                <div className="text-2xl font-bold text-[#0D5392] mb-2">18-27</div>
                 <div className="text-gray-600">Age Range</div>
               </div>
               <div className="bg-gray-50 rounded-lg p-6">
-                <div className="text-2xl font-bold text-[#0D5392] mb-2">Delhi</div>
+                <div className="text-2xl font-bold text-[#0D5392] mb-2">Delhi NCR</div>
                 <div className="text-gray-600">Location</div>
               </div>
               <div className="bg-gray-50 rounded-lg p-6">
@@ -156,12 +152,14 @@ export default function Join() {
 
             {/* Final CTA */}
             <div className="mt-8 text-center">
-              <Link 
-                href="#" 
+              <a 
+                href="https://linktr.ee/globalshapersdelhihub" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="bg-[#0D5392] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#08305c] transition duration-300 text-center shadow-lg hover:shadow-xl inline-block"
               >
                 Apply Now
-              </Link>
+              </a>
             </div>
           </div>
         </div>

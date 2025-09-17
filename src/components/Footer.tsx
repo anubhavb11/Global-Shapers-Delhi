@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center text-[#0D5392] font-bold text-sm sm:text-lg">
           GS
         </div>
-        <span className="font-semibold text-base sm:text-lg tracking-wide text-center">Global Shapers Delhi Hub</span>
+        <span className="font-semibold text-base sm:text-lg tracking-wide text-center">Global Shapers New Delhi Hub</span>
       </div>
       <nav className="flex flex-wrap gap-4 sm:gap-6 justify-center text-white/90 text-sm sm:text-base">
         <Link href="/">Home</Link>
@@ -16,7 +16,7 @@ export default function Footer() {
         <Link href="/projects">Projects</Link>
         {/* <Link href="/shapers">Our Shapers</Link> */}
         <Link href="/join">Join Us</Link>
-        <Link href="/media">Media</Link>
+        <Link href="/events">Our Events</Link>
         <Link href="/contact">Contact</Link>
         <a href="https://www.globalshapers.org/" target="_blank" rel="noopener noreferrer">Global Shapers Community</a>
       </nav>

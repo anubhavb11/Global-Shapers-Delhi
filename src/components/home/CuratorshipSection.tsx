@@ -4,6 +4,7 @@ type Member = {
   name: string;
   role: string;
   imageSrc: string;
+  description: string;
 };
 
 const members: Member[] = [
@@ -11,16 +12,19 @@ const members: Member[] = [
     name: "Mannat Sharma",
     role: "Curator",
     imageSrc: "/images/Curatorship/Mannat.jpg",
+    description: "Mannat Sharma is a Consultant with The World Bank, where she is working on expanding access to safe, accessible, affordable and quality childcare options towards enhancing female labour force participation in the country. She holds a postgraduate Economics degree from Jawaharlal Nehru University, and an undergraduate Economics degree from Lady Shri Ram College, Delhi University.​​​​​​ As the Curator, Mannat is committed to addressing local challenges and fostering collaboration among young leaders in the Delhi region."
   },
   {
     name: "Pranay Agrawal",
     role: "Vice Curator",
     imageSrc: "/images/Curatorship/Pranay.jpg",
+    description: "Pranay Agrawal is Sales Director and New Project Lead at Shriji Gases, driving industrial gases growth in sectors like pharmaceuticals, semiconductors, and green hydrogen. He co-founded Mokatela a beverage brand and the Young Tycoons Business Challenge, a global entrepreneurship initiative. During COVID-19, he launched The PPE Project, donating 1,100+ face shields to healthcare workers and police officers. Passionate about sustainability and making a positive change, he leverages his industry expertise to create impactful solutions."
   },
   {
     name: "Tanisha Seth",
     role: "Impact Officer",
     imageSrc: "/images/Curatorship/Tanisha.jpg",
+    description: "Tanisha Seth is a graduate in Economics and Finance from Ashoka University with further concentrations in International Relations, Entrepreneurial Strategy, and Leadership. She is currently an Associate at GLG, and has previously worked across consulting, policy research, and sustainability initiatives. Passionate about community-driven change, she leads projects on gender sensitisation and youth engagement as part of the Global Shapers Community."
   },
 ];
 
@@ -49,7 +53,7 @@ export default function CuratorshipSection() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-1 text-center">{member.name}</h3>
                 <p className="text-lg text-gray-800 mb-4 text-center">{member.role}</p>
                 <p className="text-gray-700 leading-relaxed text-sm">
-                  Lorem ipsum dolor sit amet consectetur. Lorem tempor arcu euismod sit gravida at eu scelerisque egestas. Vivamus dictum tempus nullam donec tincidunt sem et. Pellentesque porta convallis consectetur natoque. Consequat adipiscing sed lobortis viverra congue aenean.
+                  {member.description}
                 </p>
               </div>
             </article>

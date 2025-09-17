@@ -3,28 +3,28 @@ import EventCard from "@/components/EventCard";
 import { recentEvents, socialMedia } from "@/data/events";
 
 export const metadata: Metadata = {
-  title: "Media & Updates",
-  description: "Stay updated with the latest news, events, and media coverage from Global Shapers Delhi. Follow our journey of creating positive change through youth leadership and social impact initiatives.",
-  keywords: ["Global Shapers Delhi Media", "News", "Events", "Updates", "Social Media", "Delhi Hub", "Youth Leadership News"],
+  title: "Our Events",
+  description: "Explore our recent events and initiatives from the Global Shapers New Delhi Hub.",
+  keywords: ["Global Shapers New Delhi", "Events", "Updates", "Delhi NCR", "Youth Leadership"],
   openGraph: {
-    title: "Media & Updates - Global Shapers Delhi",
-    description: "Stay updated with the latest news, events, and media coverage from Global Shapers Delhi. Follow our journey of creating positive change through youth leadership and social impact initiatives.",
+    title: "Our Events - Global Shapers New Delhi",
+    description: "Explore our recent events and initiatives from the Global Shapers New Delhi Hub.",
     url: "/media",
   },
   twitter: {
-    title: "Media & Updates - Global Shapers Delhi",
-    description: "Stay updated with the latest news, events, and media coverage from Global Shapers Delhi. Follow our journey of creating positive change through youth leadership and social impact initiatives.",
+    title: "Our Events - Global Shapers New Delhi",
+    description: "Explore our recent events and initiatives from the Global Shapers New Delhi Hub.",
   },
 };
 
-export default function Media() {
+export default function Events() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold text-[#0D5392] mb-4">
-            Media & Updates
+            Our Events
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Stay connected with our latest events, initiatives, and youth-led dialogues. 
