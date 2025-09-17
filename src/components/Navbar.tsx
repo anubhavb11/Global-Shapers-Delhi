@@ -39,6 +39,15 @@ export default function Navbar() {
             <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#0D5392] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
           </Link>
         </li>
+        <li>
+          <Link 
+            href="/team" 
+            className="relative px-3 py-2 rounded-md transition-all duration-300 hover:bg-[#0D5392]/10 hover:text-[#0D5392] group"
+          >
+            Our Team
+            <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#0D5392] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+          </Link>
+        </li>
         {/* <li>
           <Link 
             href="/shapers" 
@@ -124,6 +133,16 @@ export default function Navbar() {
                 <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#0D5392] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
               </Link>
             </li> */}
+            <li>
+              <Link 
+                href="/team" 
+                onClick={() => setIsMenuOpen(false)}
+                className="relative px-3 py-2 rounded-md transition-all duration-300 hover:bg-[#0D5392]/10 hover:text-[#0D5392] group block"
+              >
+                Our Team
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#0D5392] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+              </Link>
+            </li>
             <li>
               <Link 
                 href="/projects" 
