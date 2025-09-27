@@ -67,7 +67,7 @@ export const projects: Project[] = [
         sdg: 'SDG 13: Climate Action',
         status: 'active',
         featured: true,
-        image: '/images/projects/ceap-main.png',
+        image: '/images/MediaUpdates/Climate_mixer.jpeg',
         gallery: [
             '/images/projects/ceap-1.jpg',
             '/images/projects/ceap-2.jpg',

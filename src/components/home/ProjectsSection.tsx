@@ -46,7 +46,7 @@ export default function ProjectsSection() {
                       ? 'bg-blue-100 text-blue-700'
                       : 'bg-yellow-100 text-yellow-700'
                   }`}>
-                    {project.status}
+                    {project.status.charAt(0).toUpperCase() + project.status.slice(1)}
                   </span>
                 </div>
                 

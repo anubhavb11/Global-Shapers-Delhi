@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import HeroSection from "../components/home/HeroSection";
 import AboutFeature from "../components/home/AboutFeature";
-import MissionVisionSection from "../components/home/MissionVisionSection";
-import ImpactSection from "../components/home/ImpactSection";
-import CuratorshipSection from "../components/home/CuratorshipSection";
 import ProjectsSection from "../components/home/ProjectsSection";
+import ImpactSection from "../components/home/ImpactSection";
+import EventsSection from "../components/home/EventsSection";
+import TeamSection from "../components/home/TeamSection";
+import MissionVisionSection from "../components/home/MissionVisionSection";
+import CuratorshipSection from "../components/home/CuratorshipSection";
 import TestimonialSection from "../components/home/TestimonialSection";
 import StayConnectedSection from "../components/home/StayConnectedSection";
 
@@ -30,7 +32,9 @@ export default function Home() {
       <AboutFeature />
       <ProjectsSection />
       <ImpactSection />
+      <EventsSection />
       <CuratorshipSection />
+      <TeamSection />
       <MissionVisionSection />
       <TestimonialSection />
       <StayConnectedSection />

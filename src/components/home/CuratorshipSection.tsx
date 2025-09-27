@@ -43,7 +43,7 @@ export default function CuratorshipSection() {
                   src={member.imageSrc}
                   alt={member.name}
                   fill
-                  className="object-cover"
+                  className={member.name === "Mannat Sharma" ? "object-contain" : "object-cover"}
                   priority={false}
                 />
               </div>
